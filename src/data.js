@@ -1,3 +1,96 @@
+export const chicago_population = [
+	{
+		year: 1840,
+		population: 4470,
+		change: '—'
+	},
+	{
+		year: 1850,
+		population:	29963,
+		change: '570.3%'
+	},
+	{
+		year: 1860,
+		population: 112172,
+		change: '274.4%'
+	},
+	{
+		year: 1870,
+		population: 298977,
+		change: '166.5%'
+	},
+	{
+		year: 1880,
+		population: 503185,
+		change: '68.3 %'
+	},
+	{
+		year: 1890,
+		population:	1099850,
+		change: '118.6 %'
+	},
+	{
+		year: 1900,
+		population:	1698575,
+		change: '54.4 %'
+	},
+	{
+		year: 1910,
+		population:	2185283,
+		change:	'28.7 %'
+	},
+	{
+		year: 1920,
+		population:	2701705,
+		change:'23.6 %'
+	},
+	{
+		year: 1930,
+		population: 3376438,
+		change: '25.0 %'
+	},
+	{
+		year: 1940,
+		population: 3396808,
+		change:	'0.6 %'
+	},
+	{
+		year: 1950,
+		population:	3620962,
+		change:	'6.6 %'
+	},
+	{
+		year: 1960,
+		population:	3550404,
+		change: '−1.9 %'
+	},
+	{
+		year: 1970,
+		population: 3366957,
+		change: '−5.2 %'
+	},
+	{
+		year: 1980,
+		population:	3005072,
+		change: '−10.7 %'
+	},
+	{
+		year: 1990,
+		population:	2783726,
+		change: '−7.4 %'
+	},
+	{
+		year: 2000,
+		population:	2896016,
+		change: '4.0 %'
+	},
+	{
+		year: 2010,
+		population: 2695598,
+		change: '−6.9 %'
+	},
+]
+
 export const chicago_homicides = [
 	{
 		year: 1928,

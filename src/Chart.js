@@ -5,8 +5,13 @@ export default function Chart({ config }) {
 	const chartContainer = useRef()
 
 	useEffect(() => {
+		let chartInstance = new Chartjs(chartContainer.current, config)
 		if (chartContainer && chartContainer.current) {
-			void new Chartjs(chartContainer.current, config)
+			void chartInstance
+		}
+
+		return () => {
+			chartInstance = null
 		}
 	}, [chartContainer, config]);
 
