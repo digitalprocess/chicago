@@ -1,6 +1,6 @@
 # Chicago Data
 
-This project is a sandbox for data visualizations using Chicago
+This project is a sandbox for data visualizations using Chicago Data
 
 # Getting Started with Create React App
 
