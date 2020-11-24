@@ -255,4 +255,8 @@ export const chicago_homicides = [
 		year: 2019,
 		numbers: 518
 	},
+	{
+		year: 2020,
+		numbers: 673
+	},
 ]
