@@ -1,8 +1,12 @@
 # Chicago Data
 
-This project is a sandbox for data visualizations using Chicago Data
+This project is a sandbox for data visualizations using Chicago Data.
 
-# Getting Started with Create React App
+## Chicago Homicides
+
+This visualization uses Chart.js to represent the number of homicides in Chicago per year.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
