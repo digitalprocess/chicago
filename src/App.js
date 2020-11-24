@@ -16,7 +16,32 @@ const populationChartConfig = {
 		}]
 	},
 	options: {
-		// ...
+		tooltips: {
+			callbacks: {
+				label: (tooltipItem, data) => {
+					// Convert the number to a string and split the string every 3 charaters from the end
+					let value = data.datasets[0].data[tooltipItem.index];
+					value = value.toString();
+					value = value.split(/(?=(?:...)*$)/);
+					value = value.join(',');
+					return value;
+				}
+			}
+		},
+		scales: {
+			yAxes: [{
+				ticks: {
+					beginAtZero: true,
+					userCallback: (value) => {
+						// Convert the number to a string and split the string every 3 charaters from the end
+						value = value.toString();
+						value = value.split(/(?=(?:...)*$)/);
+						value = value.join(',');
+						return value;
+					}
+				}
+			}]
+		}
 	}
 }
 
