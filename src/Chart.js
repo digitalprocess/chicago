@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import Chartjs from 'chart.js'
 
-const Chart = ({ config }) => {
+export default function Chart({ config }) {
 	const chartContainer = useRef()
 
 	useEffect(() => {
@@ -16,5 +16,3 @@ const Chart = ({ config }) => {
 		</div>
 	)
 }
-
-export default Chart
