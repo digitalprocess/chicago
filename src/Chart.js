@@ -1,22 +1,33 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Chartjs from 'chart.js'
 
-export default function Chart({ config }) {
+export default function Chart({ config, newData }) {
 	const chartContainer = useRef()
+	const [chartInstance, setChartInstance] = useState(null);
+
+	// console.log(chartInstance)
 
 	useEffect(() => {
-		let chartInstance = new Chartjs(chartContainer.current, config)
 		if (chartContainer && chartContainer.current) {
-			void chartInstance
+			const newChartInstance = new Chartjs(chartContainer.current, config)
+			setChartInstance(newChartInstance)
 		}
 
 		return () => {
-			chartInstance = null
+			setChartInstance(null)
 		}
-	}, [chartContainer, config]);
+	}, [chartContainer, config])
+
+	const updateDataset = (datasetIndex, newData) => {
+		chartInstance.data.datasets[datasetIndex].data = newData;
+		chartInstance.update();
+	}
 
 	return (
 		<div className="Chart">
+			{newData &&
+				<button onClick={() => updateDataset(0, newData)}></button>
+			}
 			<canvas ref={chartContainer} />
 		</div>
 	)
